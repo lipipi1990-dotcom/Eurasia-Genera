@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>组织架构 · 一带一路欧亚总商会</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D5A0;--gold-dark:#8B6914;--deep:#0A1628;--deep-mid:#12233F;--text-primary:#F5EDD8;--text-muted:#A89878;--text-body:#D4C5A0;--border:rgba(201,168,76,0.25);--border-strong:rgba(201,168,76,0.5)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--deep);color:var(--text-body);line-height:1.7;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:68px}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo-icon{width:48px;height:48px;border-radius:6px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent}.nav-logo-icon img{width:48px;height:48px;object-fit:contain;display:block;filter:brightness(1.2) drop-shadow(0 0 4px rgba(201,168,76,0.3))}
+.nav-logo-text{font-family:'Noto Serif SC',serif;font-size:15px;color:var(--text-primary);font-weight:600;line-height:1.4}
+.nav-logo-text span{display:block;font-size:11px;color:var(--text-muted);font-weight:400;font-family:'Noto Sans SC',sans-serif;letter-spacing:0.5px}
+.nav-links{display:flex;gap:26px}
+.nav-links a{text-decoration:none;color:var(--text-muted);font-size:13px;transition:color 0.2s;position:relative;padding-bottom:4px}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.2s}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-cta{background:var(--gold);color:var(--deep);border:none;padding:9px 22px;font-size:13px;font-weight:700;font-family:'Noto Sans SC',sans-serif;cursor:pointer;border-radius:4px;transition:background 0.2s;text-decoration:none}
+.nav-cta:hover{background:var(--gold-light)}
+.page-hero{padding:140px 60px 80px;background:linear-gradient(180deg,var(--deep-mid) 0%,var(--deep) 100%);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,1) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,1) 1px,transparent 1px);background-size:60px 60px;opacity:0.03}
+.page-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}.breadcrumb a:hover{color:var(--gold)}
+.bsep{color:rgba(168,152,120,0.4)}
+.page-title{font-family:'Noto Serif SC',serif;font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--text-primary);line-height:1.2;margin-bottom:16px}
+.page-title em{font-style:normal;background:linear-gradient(135deg,var(--gold) 0%,#F0D080 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-subtitle{font-size:16px;color:var(--text-muted);max-width:640px;line-height:1.8}
+section{padding:80px 60px}
+.inn{max-width:1200px;margin:0 auto}
+.sl{font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.st{font-family:'Noto Serif SC',serif;font-size:clamp(22px,2.5vw,32px);font-weight:700;color:var(--text-primary);line-height:1.3;margin-bottom:16px}
+.sd{font-size:14px;color:var(--text-muted);max-width:600px;line-height:1.8}
+.dv{width:48px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:20px}
+.rv{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}.rv.in{opacity:1;transform:none}
+footer{background:rgba(5,12,22,0.98);padding:40px 60px 28px;border-top:1px solid var(--border)}
+.fi{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.fl{display:flex;gap:18px;flex-wrap:wrap}
+.fl a{text-decoration:none;font-size:13px;color:var(--text-muted);transition:color 0.2s}.fl a:hover{color:var(--gold)}
+.fc{font-size:12px;color:rgba(168,152,120,0.45);padding-top:18px;margin:18px auto 0;border-top:1px solid var(--border);max-width:1200px;display:flex;justify-content:space-between}
+
+.org-wrap{margin-top:56px}
+.org-box{background:rgba(201,168,76,0.08);border:1px solid var(--gold);padding:16px 40px;text-align:center;font-family:'Noto Serif SC',serif;font-size:17px;font-weight:600;color:var(--text-primary);display:inline-block}
+.org-box small{display:block;font-size:11px;color:var(--text-muted);font-family:'Noto Sans SC',sans-serif;font-weight:400;margin-top:3px;letter-spacing:0.5px}
+.org-center{display:flex;justify-content:center}
+.vl{width:1px;height:28px;background:var(--border-strong);margin:0 auto}
+.hl-bar{height:1px;background:var(--border);margin:0 16.5%}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ob{border:1px solid var(--border);padding:16px 18px;text-align:center;font-size:14px;color:var(--text-primary);font-weight:500;background:rgba(201,168,76,0.02)}
+.ob.hi{border-color:var(--border-strong)}
+.ob small{display:block;font-size:11px;color:var(--text-muted);margin-top:3px;font-weight:400}
+.conn{display:grid;grid-template-columns:repeat(3,1fr)}
+.conn-item{display:flex;justify-content:center}
+.five-col{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.sub-box{border:1px solid var(--border);padding:14px 8px;text-align:center;font-size:12px;color:var(--text-muted);background:var(--deep-mid);transition:all 0.2s}
+.sub-box:hover{color:var(--gold);border-color:var(--border-strong)}
+.sub-cap{font-size:11px;color:var(--text-muted);text-align:center;margin-top:10px;letter-spacing:0.5px}
+.dept-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.dept-card{border:1px solid var(--border);padding:28px;transition:all 0.2s}
+.dept-card:hover{border-color:var(--border-strong)}
+.dept-card h4{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--gold);margin-bottom:12px;font-weight:600}
+.dept-card p{font-size:13px;color:var(--text-muted);line-height:1.7}
+</style><link rel="stylesheet" href="mobile.css">
+</head><body>
+<nav><a class="nav-logo" href="index.html"><div class="nav-logo-icon"><img src="logo.png" alt="欧亚总商会"></div><div class="nav-logo-text">一带一路欧亚总商会<span>Eurasia General Chamber of Commerce · Belt and Road</span></div></a><div class="nav-links">
+    <a href="index.html" >首页</a>
+    <a href="pillars.html" >三轮驱动</a>
+    <a href="highlights.html" >核心能力</a>
+    <a href="service.html" >服务路径</a>
+    <a href="industry.html" >行业分类</a>
+    <a href="membership.html" >入会体系</a>
+    <a href="org.html" class=active>组织架构</a>
+    <a href="partners.html" >合作矩阵</a>
+    <a href="about.html" >关于我们</a>
+  </div><a href="membership.html" class="nav-cta">申请入会</a><button class="hamburger" id="hamburger" aria-label="菜单">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html">首页</a>
+    <a href="pillars.html">三轮驱动</a>
+    <a href="highlights.html">核心能力</a>
+    <a href="service.html">服务路径</a>
+    <a href="industry.html">行业分类</a>
+    <a href="membership.html">入会体系</a>
+    <a href="org.html">组织架构</a>
+    <a href="partners.html">合作矩阵</a>
+    <a href="about.html">关于我们</a>
+    <a href="apply.html" class="nav-mobile-cta">申请入会</a>
+  </div>
+</nav>
+<div class="page-hero"><div class="page-hero-inner">
+<div class="breadcrumb"><a href="index.html">首页</a><span class="bsep">›</span><span>组织架构</span></div>
+<h1 class="page-title">联盟管理与<br><em>秘书处架构</em></h1>
+<p class="page-subtitle">欧亚总商会及联盟由理事会、管理委员会共同治理，秘书处统一管理日常事务，五大职能部门分工协作，确保高效规范运营。</p>
+</div></div>
+
+<section style="background:var(--deep)">
+<div class="inn">
+<div class="rv">
+<div class="sl">ORGANIZATION · 组织架构</div>
+<div class="dv"></div>
+<h2 class="st">联盟管理与秘书处架构</h2>
+<p class="sd">欧亚总商会及联盟由理事会、管理委员会共同治理，日常事务由秘书处统一管理，下设五大职能部门，确保高效规范运营。</p>
+</div>
+<div class="org-wrap rv">
+<div class="org-center"><div class="org-box">欧亚总商会联盟<small>Eurasia Chamber Alliance</small></div></div>
+<div class="vl"></div>
+<div class="hl-bar"></div>
+<div class="three-col">
+<div class="ob">理事会<small>Board of Directors</small></div>
+<div class="ob hi">管理委员会<small>Management Committee</small></div>
+<div class="ob">秘书处<small>Secretariat</small></div>
+</div>
+<div class="conn">
+<div class="conn-item"><div class="vl" style="background:var(--border)"></div></div>
+<div class="conn-item"><div class="vl" style="background:var(--border)"></div></div>
+<div class="conn-item"><div class="vl" style="background:var(--border-strong)"></div></div>
+</div>
+<div class="five-col">
+<div class="sub-box">综合办公室</div>
+<div class="sub-box">会员服务部</div>
+<div class="sub-box">项目管理部</div>
+<div class="sub-box">计划财务部</div>
+<div class="sub-box">后勤保障部</div>
+</div>
+<p class="sub-cap">秘书处五大职能部门</p>
+</div>
+</div>
+</section>
+<section style="background:var(--deep-mid)">
+<div class="inn">
+<div class="rv">
+<div class="sl">DEPARTMENTS · 职能部门</div>
+<div class="dv"></div>
+<h2 class="st">秘书处五大职能部门</h2>
+<p class="sd">秘书处统筹欧亚总商会日常运营，五大部门分工协作，为会员提供专业高效的全链路服务支撑。</p>
+</div>
+<div class="dept-detail rv">
+<div class="dept-card"><h4>综合办公室</h4><p>负责总商会日常行政管理、对外联络协调、品牌传播与媒体关系维护，统筹重要活动的策划与执行，保障组织高效运转。</p></div>
+<div class="dept-card"><h4>会员服务部</h4><p>负责会员招募、资质审核、入会流程管理，以及会员权益落实、会员关系维护与增值服务提供，是会员与平台之间的核心桥梁。</p></div>
+<div class="dept-card"><h4>项目管理部</h4><p>负责欧亚经贸合作区及各类出海项目的跟踪推进、进度管理和资源协调，确保项目按计划落地，实现预期经济效益。</p></div>
+<div class="dept-card"><h4>计划财务部</h4><p>负责平台年度预算制定、资金管理与财务核算，统筹会员收益分配、证券化收益结算及年度分红池的管理工作。</p></div>
+<div class="dept-card"><h4>后勤保障部</h4><p>负责欧亚总商会线下场所、设施及物资的管理维护，为欧亚国际俱乐部、会展活动及各类商务接待提供可靠后勤支撑。</p></div>
+</div>
+</div>
+</section>
+
+<footer><div class="fi"><a href="index.html" class="nav-logo" style="text-decoration:none"><div class="nav-logo-icon"><img src="logo.png" alt="欧亚总商会"></div><div class="nav-logo-text">一带一路欧亚总商会<span>Eurasia General Chamber of Commerce</span></div></a><div class="fl"><a href="about.html">关于我们</a><a href="pillars.html">三轮驱动</a><a href="highlights.html">核心能力</a><a href="service.html">服务路径</a><a href="industry.html">行业分类</a><a href="membership.html">入会体系</a><a href="org.html">组织架构</a><a href="partners.html">合作矩阵</a></div></div><div class="fc"><span>© 2026 一带一路欧亚总商会 · 一带一路国际产业联盟</span><span>注册于哈萨克斯坦阿拉木图 · NGO</span></div></footer><script>const io=new IntersectionObserver(e=>e.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add("in"),i*60);io.unobserve(e.target)}}),{threshold:0.07});document.querySelectorAll(".rv").forEach(el=>io.observe(el));</script>
+<script>
+(function(){
+  var btn = document.getElementById("hamburger");
+  var menu = document.getElementById("mobileMenu");
+  if(!btn||!menu) return;
+  btn.addEventListener("click", function(){
+    btn.classList.toggle("open");
+    menu.classList.toggle("open");
+  });
+  // close on link click
+  menu.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){
+      btn.classList.remove("open");
+      menu.classList.remove("open");
+    });
+  });
+})();
+</script>
+</body></html>

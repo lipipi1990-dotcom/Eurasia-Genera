@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我们 · 一带一路欧亚总商会</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D5A0;--gold-dark:#8B6914;--deep:#0A1628;--deep-mid:#12233F;--text-primary:#F5EDD8;--text-muted:#A89878;--text-body:#D4C5A0;--border:rgba(201,168,76,0.25);--border-strong:rgba(201,168,76,0.5)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--deep);color:var(--text-body);line-height:1.7;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:68px}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo-icon{width:48px;height:48px;border-radius:6px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent}.nav-logo-icon img{width:48px;height:48px;object-fit:contain;display:block;filter:brightness(1.2) drop-shadow(0 0 4px rgba(201,168,76,0.3))}
+.nav-logo-text{font-family:'Noto Serif SC',serif;font-size:15px;color:var(--text-primary);font-weight:600;line-height:1.4}
+.nav-logo-text span{display:block;font-size:11px;color:var(--text-muted);font-weight:400;font-family:'Noto Sans SC',sans-serif;letter-spacing:0.5px}
+.nav-links{display:flex;gap:26px}
+.nav-links a{text-decoration:none;color:var(--text-muted);font-size:13px;transition:color 0.2s;position:relative;padding-bottom:4px}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.2s}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-cta{background:var(--gold);color:var(--deep);border:none;padding:9px 22px;font-size:13px;font-weight:700;font-family:'Noto Sans SC',sans-serif;cursor:pointer;border-radius:4px;transition:background 0.2s;text-decoration:none}
+.nav-cta:hover{background:var(--gold-light)}
+.page-hero{padding:140px 60px 80px;background:linear-gradient(180deg,var(--deep-mid) 0%,var(--deep) 100%);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,1) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,1) 1px,transparent 1px);background-size:60px 60px;opacity:0.03}
+.page-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb-sep{color:rgba(168,152,120,0.4)}
+.page-title{font-family:'Noto Serif SC',serif;font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--text-primary);line-height:1.2;margin-bottom:16px}
+.page-title em{font-style:normal;background:linear-gradient(135deg,var(--gold) 0%,#F0D080 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-subtitle{font-size:16px;color:var(--text-muted);max-width:640px;line-height:1.8}
+section{padding:80px 60px}
+.inner{max-width:1200px;margin:0 auto}
+.section-label{font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.section-title{font-family:'Noto Serif SC',serif;font-size:clamp(22px,2.5vw,32px);font-weight:700;color:var(--text-primary);line-height:1.3;margin-bottom:16px}
+.section-desc{font-size:14px;color:var(--text-muted);max-width:560px;line-height:1.8}
+.divider{width:48px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:20px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.card-stack{display:flex;flex-direction:column;gap:14px}
+.accent-card{border:1px solid var(--border);border-left:3px solid var(--gold);padding:20px 24px;background:rgba(201,168,76,0.03);border-radius:0 4px 4px 0;transition:background 0.2s}
+.accent-card:hover{background:rgba(201,168,76,0.07)}
+.accent-card h3{font-family:'Noto Serif SC',serif;font-size:14px;color:var(--gold);margin-bottom:7px;font-weight:600}
+.accent-card p{font-size:13px;color:var(--text-muted);line-height:1.7}
+.goals-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
+.goal-item{background:var(--deep);padding:32px 24px;text-align:center;transition:background 0.3s}
+.goal-item:hover{background:rgba(201,168,76,0.04)}
+.goal-num{font-family:'Noto Serif SC',serif;font-size:11px;letter-spacing:2px;color:var(--gold);margin-bottom:14px;text-transform:uppercase}
+.goal-text{font-size:13px;color:var(--text-muted);line-height:1.7}
+.goal-highlight{font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--gold);display:block;margin-bottom:8px}
+.timeline{display:flex;flex-direction:column;gap:0;margin-top:48px;position:relative}
+.timeline::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--gold),transparent)}
+.tl-item{display:flex;gap:32px;padding-bottom:36px;position:relative}
+.tl-dot{width:48px;height:48px;border-radius:50%;border:2px solid var(--gold);background:var(--deep);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:11px;color:var(--gold);flex-shrink:0;position:relative;z-index:1}
+.tl-body{padding-top:10px}
+.tl-body h4{font-size:15px;color:var(--text-primary);font-weight:500;margin-bottom:6px;font-family:'Noto Serif SC',serif}
+.tl-body p{font-size:13px;color:var(--text-muted);line-height:1.7}
+.honor-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.honor-card{border:1px solid var(--border);padding:28px;position:relative;overflow:hidden}
+.honor-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.honor-card h3{font-family:'Noto Serif SC',serif;font-size:16px;color:var(--gold);margin-bottom:18px;font-weight:600}
+.honor-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.honor-list li{font-size:13px;color:var(--text-muted);display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.honor-list li::before{content:'◈';color:var(--gold);font-size:10px;flex-shrink:0;margin-top:2px}
+footer{background:rgba(5,12,22,0.98);padding:40px 60px 28px;border-top:1px solid var(--border)}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{text-decoration:none;font-size:13px;color:var(--text-muted);transition:color 0.2s}.footer-links a:hover{color:var(--gold)}
+.footer-copy{font-size:12px;color:rgba(168,152,120,0.45);padding-top:20px;margin-top:20px;border-top:1px solid var(--border);max-width:1200px;margin:20px auto 0;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+<link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon"><img src="logo.png" alt="欧亚总商会"></div>
+    <div class="nav-logo-text">一带一路欧亚总商会<span>Eurasia General Chamber of Commerce · Belt and Road</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" >首页</a>
+    <a href="pillars.html" >三轮驱动</a>
+    <a href="highlights.html" >核心能力</a>
+    <a href="service.html" >服务路径</a>
+    <a href="industry.html" >行业分类</a>
+    <a href="membership.html" >入会体系</a>
+    <a href="org.html" >组织架构</a>
+    <a href="partners.html" >合作矩阵</a>
+    <a href="about.html" class=active>关于我们</a>
+  </div>
+  <a href="membership.html" class="nav-cta">申请入会</a>
+<button class="hamburger" id="hamburger" aria-label="菜单">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html">首页</a>
+    <a href="pillars.html">三轮驱动</a>
+    <a href="highlights.html">核心能力</a>
+    <a href="service.html">服务路径</a>
+    <a href="industry.html">行业分类</a>
+    <a href="membership.html">入会体系</a>
+    <a href="org.html">组织架构</a>
+    <a href="partners.html">合作矩阵</a>
+    <a href="about.html">关于我们</a>
+    <a href="apply.html" class="nav-mobile-cta">申请入会</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">首页</a><span class="breadcrumb-sep">›</span><span>关于我们</span></div>
+    <h1 class="page-title">构建产融结合<br><em>出海国际合作平台</em></h1>
+    <p class="page-subtitle">一带一路欧亚总商会，注册于哈萨克斯坦阿拉木图的非政府国际组织，致力于推动一带一路全球化进程，打造欧亚新兴产业出海国际"航母"。</p>
+  </div>
+</div>
+
+<section style="background:var(--deep-mid)">
+  <div class="inner">
+    <div class="two-col reveal">
+      <div>
+        <div class="section-label">ABOUT US · 我们是谁</div>
+        <div class="divider"></div>
+        <h2 class="section-title">由发起到成形</h2>
+        <p class="section-desc" style="margin-bottom:16px">欧亚总商会由丝绸之路国际合作组织与中国中小企业协会一带一路工作委员会联合发起，是注册于哈萨克斯坦阿拉木图的非政府国际组织（NGO），也是推动一带一路全球化的重要平台。</p>
+        <p class="section-desc" style="margin-bottom:16px">现由丝绸之路国际合作组织、中国中小企业协会一带一路工作委员会在中亚以及一带一路沿线主要国家十多年来形成的人脉、项目、市场等综合资源优势，包括国际化方面积累的丰富经验与人才储备，已具备组建欧亚总商会、一带一路产业集团和进行一带一路重点项目综合开发的基础条件。</p>
+        <p class="section-desc">通过设立新兴产业集团搭建欧亚总商会抱团出海平台，将一带一路中亚国家级经贸园区项目开发，结合产业证券化、数字化裂变，快速实现经济与社会效益双赢的目标。</p>
+      </div>
+      <div class="card-stack">
+        <div class="accent-card">
+          <h3>愿景</h3>
+          <p>构建一带一路产融结合出海国际合作平台，打造一带一路新兴产业出海国际"航母"。</p>
+        </div>
+        <div class="accent-card">
+          <h3>使命</h3>
+          <p>充分发挥中国优势产能在欧亚经济圈的重要作用，为落实一带一路全球倡议提供产业与资本双轮驱动的综合解决方案。</p>
+        </div>
+        <div class="accent-card">
+          <h3>价值观</h3>
+          <p>开放合作、互利共赢、专业高效、诚信透明——以国际化视野推动欧亚经贸合作走向新时代。</p>
+        </div>
+        <div class="accent-card">
+          <h3>核心优势</h3>
+          <p>十多年中亚及沿线国家深耕积累，人脉、项目、市场三位一体，具备国际化人才储备与商业模式创新能力。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--deep)">
+  <div class="inner">
+    <div class="reveal">
+      <div class="section-label">2026 GOALS · 核心目标</div>
+      <div class="divider"></div>
+      <h2 class="section-title">2026年五大战略目标</h2>
+      <p class="section-desc">立足当下，着眼未来，以系统化路径在2026年实现规模化跃升。</p>
+    </div>
+    <div class="goals-grid reveal">
+      <div class="goal-item">
+        <div class="goal-num">目标 01</div>
+        <div class="goal-text"><span class="goal-highlight">国际化平台</span>建立国际化、专业化、规模化产业融合合作与孵化平台</div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-num">目标 02</div>
+        <div class="goal-text"><span class="goal-highlight">万名会员</span>完成万名高端企业家会员加盟</div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-num">目标 03</div>
+        <div class="goal-text"><span class="goal-highlight">万亿生态</span>完成工业化建筑、设施农业、数字科技与文旅万亿新生态</div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-num">目标 04</div>
+        <div class="goal-text"><span class="goal-highlight">5–10亿</span>实现年度平台营收5-10亿元</div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-num">目标 05</div>
+        <div class="goal-text"><span class="goal-highlight">3–5家</span>重组并购A股、港股上市公司</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--deep-mid)" id="positioning">
+  <div class="inner">
+    <div class="two-col reveal">
+      <div>
+        <div class="section-label">POSITIONING · 战略定位</div>
+        <div class="divider"></div>
+        <h2 class="section-title">三轮驱动<br>协同出海</h2>
+        <p class="section-desc" style="margin-bottom:16px">欧亚总商会以"平台 + 数字生态 + 项目综合开发"三轮驱动为核心战略定位，形成线上线下一体化的国际商业生态系统。</p>
+        <p class="section-desc" style="margin-bottom:16px">平台层面，作为NGO国际组织汇聚一带一路沿线各国商会企业家共同参与；生态层面，基于区块链技术搭建全球共享数字经济生态；项目层面，以吉尔吉斯斯坦5.67平方公里国家级境外经济贸易合作区为核心驱动引擎。</p>
+        <p class="section-desc">三轮协同，快速实现产业规模化、资产证券化、商业数字化的全面跃升。</p>
+        <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
+          <a href="pillars.html" class="btn-primary" style="font-size:13px;padding:11px 24px">了解三轮驱动</a>
+          <a href="org.html" class="btn-outline" style="font-size:13px;padding:11px 24px">查看组织架构</a>
+        </div>
+      </div>
+      <div>
+        <div style="border:1px solid var(--border);padding:36px;background:rgba(201,168,76,0.02)">
+          <div style="display:flex;flex-direction:column;gap:24px">
+            <div style="display:flex;gap:20px;align-items:flex-start">
+              <div style="width:44px;height:44px;border:1px solid var(--border-strong);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg></div>
+              <div><div style="font-family:'Noto Serif SC',serif;font-size:15px;color:var(--text-primary);font-weight:600;margin-bottom:6px">平台</div><p style="font-size:13px;color:var(--text-muted);line-height:1.7">非政府国际组织NGO，汇聚一带一路沿线各国商会企业家，构建国际化合作网络</p></div>
+            </div>
+            <div style="height:1px;background:var(--border)"></div>
+            <div style="display:flex;gap:20px;align-items:flex-start">
+              <div style="width:44px;height:44px;border:1px solid var(--border-strong);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
+              <div><div style="font-family:'Noto Serif SC',serif;font-size:15px;color:var(--text-primary);font-weight:600;margin-bottom:6px">数字生态</div><p style="font-size:13px;color:var(--text-muted);line-height:1.7">基于区块链技术的全球共享数字经济生态，涵盖商城、电商、直播、RWA数字资产</p></div>
+            </div>
+            <div style="height:1px;background:var(--border)"></div>
+            <div style="display:flex;gap:20px;align-items:flex-start">
+              <div style="width:44px;height:44px;border:1px solid var(--border-strong);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div><div style="font-family:'Noto Serif SC',serif;font-size:15px;color:var(--text-primary);font-weight:600;margin-bottom:6px">项目开发</div><p style="font-size:13px;color:var(--text-muted);line-height:1.7">吉尔吉斯斯坦5.67km²国家级境外综合开发区，农产品交易、制造、物流全覆盖</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--deep)" id="honor">
+  <div class="inner">
+    <div class="reveal">
+      <div class="section-label">HONORARY ENDORSEMENT · 荣誉背书</div>
+      <div class="divider"></div>
+      <h2 class="section-title">国际级荣誉资质体系</h2>
+      <p class="section-desc">入会会员将获得来自欧亚国际商会及多个国际权威组织的荣誉资质认定，为企业国际化发展提供有力信用背书。</p>
+    </div>
+    <div class="honor-grid reveal">
+      <div class="honor-card">
+        <h3>欧亚国际商会荣誉体系</h3>
+        <ul class="honor-list">
+          <li>终身名誉会长</li>
+          <li>名誉会长</li>
+          <li>常务理事</li>
+          <li>理事</li>
+          <li>高级会员</li>
+        </ul>
+      </div>
+      <div class="honor-card">
+        <h3>国际组织高级会员资格</h3>
+        <ul class="honor-list">
+          <li>丝合国际组织（SICO）高级会员</li>
+          <li>金砖国家经济委员会高级会员</li>
+          <li>上合组织经济委员会高级会员</li>
+          <li>欧盟中国委员会高级会员</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none">
+      <div class="nav-logo-icon"><img src="logo.png" alt="欧亚总商会"></div>
+      <div class="nav-logo-text">一带一路欧亚总商会<span>Eurasia General Chamber of Commerce</span></div>
+    </a>
+    <div class="footer-links">
+      <a href="about.html">关于我们</a><a href="pillars.html">三轮驱动</a><a href="highlights.html">核心能力</a>
+      <a href="service.html">服务路径</a><a href="industry.html">行业分类</a><a href="membership.html">入会体系</a>
+      <a href="org.html">组织架构</a><a href="partners.html">合作矩阵</a>
+    </div>
+  </div>
+  <div class="footer-copy"><span>© 2026 一带一路欧亚总商会 · 一带一路国际产业联盟</span><span>注册于哈萨克斯坦阿拉木图 · NGO</span></div>
+</footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*60);io.unobserve(e.target)}}),{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script>
+(function(){
+  var btn = document.getElementById("hamburger");
+  var menu = document.getElementById("mobileMenu");
+  if(!btn||!menu) return;
+  btn.addEventListener("click", function(){
+    btn.classList.toggle("open");
+    menu.classList.toggle("open");
+  });
+  // close on link click
+  menu.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){
+      btn.classList.remove("open");
+      menu.classList.remove("open");
+    });
+  });
+})();
+</script>
+</body></html>

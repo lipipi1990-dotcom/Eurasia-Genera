@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>服务路径 · 一带一路欧亚总商会</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D5A0;--gold-dark:#8B6914;--deep:#0A1628;--deep-mid:#12233F;--text-primary:#F5EDD8;--text-muted:#A89878;--text-body:#D4C5A0;--border:rgba(201,168,76,0.25);--border-strong:rgba(201,168,76,0.5)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--deep);color:var(--text-body);line-height:1.7;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:68px}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo-icon{width:48px;height:48px;border-radius:6px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent}.nav-logo-icon img{width:48px;height:48px;object-fit:contain;display:block;filter:brightness(1.2) drop-shadow(0 0 4px rgba(201,168,76,0.3))}
+.nav-logo-text{font-family:'Noto Serif SC',serif;font-size:15px;color:var(--text-primary);font-weight:600;line-height:1.4}
+.nav-logo-text span{display:block;font-size:11px;color:var(--text-muted);font-weight:400;font-family:'Noto Sans SC',sans-serif;letter-spacing:0.5px}
+.nav-links{display:flex;gap:26px}
+.nav-links a{text-decoration:none;color:var(--text-muted);font-size:13px;transition:color 0.2s;position:relative;padding-bottom:4px}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform 0.2s}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-cta{background:var(--gold);color:var(--deep);border:none;padding:9px 22px;font-size:13px;font-weight:700;font-family:'Noto Sans SC',sans-serif;cursor:pointer;border-radius:4px;transition:background 0.2s;text-decoration:none}
+.nav-cta:hover{background:var(--gold-light)}
+.page-hero{padding:140px 60px 80px;background:linear-gradient(180deg,var(--deep-mid) 0%,var(--deep) 100%);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,1) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,1) 1px,transparent 1px);background-size:60px 60px;opacity:0.03}
+.page-hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto}
+.breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.2s}.breadcrumb a:hover{color:var(--gold)}
+.bsep{color:rgba(168,152,120,0.4)}
+.page-title{font-family:'Noto Serif SC',serif;font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--text-primary);line-height:1.2;margin-bottom:16px}
+.page-title em{font-style:normal;background:linear-gradient(135deg,var(--gold) 0%,#F0D080 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-subtitle{font-size:16px;color:var(--text-muted);max-width:640px;line-height:1.8}
+section{padding:80px 60px}
+.inn{max-width:1200px;margin:0 auto}
+.sl{font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.st{font-family:'Noto Serif SC',serif;font-size:clamp(22px,2.5vw,32px);font-weight:700;color:var(--text-primary);line-height:1.3;margin-bottom:16px}
+.sd{font-size:14px;color:var(--text-muted);max-width:600px;line-height:1.8}
+.dv{width:48px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:20px}
+.rv{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}.rv.in{opacity:1;transform:none}
+footer{background:rgba(5,12,22,0.98);padding:40px 60px 28px;border-top:1px solid var(--border)}
+.fi{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.fl{display:flex;gap:18px;flex-wrap:wrap}
+.fl a{text-decoration:none;font-size:13px;color:var(--text-muted);transition:color 0.2s}.fl a:hover{color:var(--gold)}
+.fc{font-size:12px;color:rgba(168,152,120,0.45);padding-top:18px;margin:18px auto 0;border-top:1px solid var(--border);max-width:1200px;display:flex;justify-content:space-between}
+
+.path-wrap{margin-top:60px}
+.path-step-full{display:grid;grid-template-columns:80px 1fr;gap:40px;align-items:start;padding:40px 0;border-bottom:1px solid var(--border);position:relative}
+.path-step-full:last-child{border-bottom:none}
+.path-step-full::before{content:'';position:absolute;left:39px;top:80px;bottom:0;width:1px;background:var(--border)}
+.path-step-full:last-child::before{display:none}
+.step-circle{width:80px;height:80px;border-radius:50%;border:2px solid var(--gold);background:var(--deep);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--gold);flex-shrink:0;position:relative;z-index:1}
+.step-body h3{font-family:'Noto Serif SC',serif;font-size:22px;color:var(--text-primary);font-weight:700;margin-bottom:10px}
+.step-en{font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+.step-body p{font-size:14px;color:var(--text-muted);line-height:1.8;max-width:640px;margin-bottom:16px}
+.sub-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:560px}
+.sub-list li{font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start}
+.sub-list li::before{content:'—';color:var(--gold);flex-shrink:0}
+</style><link rel="stylesheet" href="mobile.css">
+</head><body>
+<nav><a class="nav-logo" href="index.html"><div class="nav-logo-icon"><img src="logo.png" alt="欧亚总商会"></div><div class="nav-logo-text">一带一路欧亚总商会<span>Eurasia General Chamber of Commerce · Belt and Road</span></div></a><div class="nav-links">
+    <a href="index.html" >首页</a>
+    <a href="pillars.html" >三轮驱动</a>
+    <a href="highlights.html" >核心能力</a>
+    <a href="service.html" class=active>服务路径</a>
+    <a href="industry.html" >行业分类</a>
+    <a href="membership.html" >入会体系</a>
+    <a href="org.html" >组织架构</a>
+    <a href="partners.html" >合作矩阵</a>
+    <a href="about.html" >关于我们</a>
+  </div><a href="membership.html" class="nav-cta">申请入会</a><button class="hamburger" id="hamburger" aria-label="菜单">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html">首页</a>
+    <a href="pillars.html">三轮驱动</a>
+    <a href="highlights.html">核心能力</a>
+    <a href="service.html">服务路径</a>
+    <a href="industry.html">行业分类</a>
+    <a href="membership.html">入会体系</a>
+    <a href="org.html">组织架构</a>
+    <a href="partners.html">合作矩阵</a>
+    <a href="about.html">关于我们</a>
+    <a href="apply.html" class="nav-mobile-cta">申请入会</a>
+  </div>
+</nav>
+<div class="page-hero"><div class="page-hero-inner">
+<div class="breadcrumb"><a href="index.html">首页</a><span class="bsep">›</span><span>服务路径</span></div>
+<h1 class="page-title">企业财富倍增<br><em>四步路径</em></h1>
+<p class="page-subtitle">平台资源 / 项目订单 / 收益叠加 / 放大倍增——四步走，实现企业国际化发展的系统性跃升，从出海业务到全球投资布局。</p>
+</div></div>
+
+<section style="background:var(--deep)">
+<div class="inn">
+<div class="rv">
+<div class="sl">SERVICE PATHWAY · 服务路径</div>
+<div class="dv"></div>
+<h2 class="st">企业财富倍增四步路径</h2>
+<p class="sd">平台资源 / 项目订单 / 收益叠加 / 放大倍增——四步走，实现企业国际化发展的系统性跃升。</p>
+</div>
+<div class="path-wrap">
+<div class="path-step-full rv">
+<div class="step-circle">01</div>
+<div class="step-body">
+<div class="step-en">Step 01 · Onboarding</div>
+<h3>入会加盟</h3>
+<p>通过行业协会合作转化、会议活动加盟或媒体广告宣传三大渠道申请入会。欧亚总商会对入会企业进行系统性评估，确认产业方向与合规资质，完成正式加盟。</p>
+<ul class="sub-list">
+<li>企业资质系统性筛选评估</li><li>出海方向专项培训赋能</li>
+<li>高端活动考察深度对接</li><li>确定国际化项目发展方向</li>
+</ul>
+</div>
+</div>
+<div class="path-step-full rv">
+<div class="step-circle">02</div>
+<div class="step-body">
+<div class="step-en">Step 02 · Order Acquisition</div>
+<h3>订单获取与服务支持</h3>
+<p>依托全球工业化建筑生态线上平台与欧亚经贸合作区项目资源，帮助会员企业快速获取国际项目订单，并提供从下单到收款的全流程服务保障。</p>
+<ul class="sub-list">
+<li>获取国际化项目订单</li><li>供应链平台全程服务</li>
+<li>报关清关专业支持</li><li>跨境汇兑结算通道</li>
+</ul>
+</div>
+</div>
+<div class="path-step-full rv">
+<div class="step-circle">03</div>
+<div class="step-body">
+<div class="step-en">Step 03 · Ecosystem Integration</div>
+<h3>生态融入与角色定位</h3>
+<p>企业正式融入全球万亿工业化建筑生态系统，在欧亚总商会平台生态中明确自身角色，参与项目分工协作，深度整合供应链资源，实现规模化发展。</p>
+<ul class="sub-list">
+<li>融入全球工业化建筑生态</li><li>明确平台角色定位分工</li>
+<li>项目进展持续跟进支持</li><li>供应链深度整合共建</li>
+</ul>
+</div>
+</div>
+<div class="path-step-full rv">
+<div class="step-circle">04</div>
+<div class="step-body">
+<div class="step-en">Step 04 · Revenue Multiplication</div>
+<h3>收益叠加与财富倍增</h3>
+<p>通过平台多维度收益分享机制、证券化收益叠加、数字化资产持续增值以及年度分红池参与，实现企业财富的系统性倍增，完成从出海业务到全球投资的跃升。</p>
+<ul class="sub-list">
+<li>平台多维度收益分享</li><li>证券化资产收益叠加</li>
+<li>数字化资产持续增值</li><li>参与年度分红池（5%）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer><div class="fi"><a href="index.html" class="nav-logo" style="text-decoration:none"><div class="nav-logo-icon"><img src="logo.png" alt="欧亚总商会"></div><div class="nav-logo-text">一带一路欧亚总商会<span>Eurasia General Chamber of Commerce</span></div></a><div class="fl"><a href="about.html">关于我们</a><a href="pillars.html">三轮驱动</a><a href="highlights.html">核心能力</a><a href="service.html">服务路径</a><a href="industry.html">行业分类</a><a href="membership.html">入会体系</a><a href="org.html">组织架构</a><a href="partners.html">合作矩阵</a></div></div><div class="fc"><span>© 2026 一带一路欧亚总商会 · 一带一路国际产业联盟</span><span>注册于哈萨克斯坦阿拉木图 · NGO</span></div></footer><script>const io=new IntersectionObserver(e=>e.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add("in"),i*60);io.unobserve(e.target)}}),{threshold:0.07});document.querySelectorAll(".rv").forEach(el=>io.observe(el));</script>
+<script>
+(function(){
+  var btn = document.getElementById("hamburger");
+  var menu = document.getElementById("mobileMenu");
+  if(!btn||!menu) return;
+  btn.addEventListener("click", function(){
+    btn.classList.toggle("open");
+    menu.classList.toggle("open");
+  });
+  // close on link click
+  menu.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){
+      btn.classList.remove("open");
+      menu.classList.remove("open");
+    });
+  });
+})();
+</script>
+</body></html>
